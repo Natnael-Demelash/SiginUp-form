@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background: hsla(0, 100%, 74%);
+    background-image: url("images/bg-intro-mobile.png");
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    padding: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro h2 {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.intro p {
+    width: 100%;
+}
+
+span {
+    opacity: 0.8;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.btn {
+    background: hsl(248, 32%, 49%);
+    border: none;
+    padding: 1.6rem 1rem;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    width: 90%;
+    font-weight: 800;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.form {
+    background-color: #fff;
+    width: 90%;
+    padding: 35px;
+    margin-left: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid rgba(125, 139, 153, 0.534);
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: rgba(125, 139, 153);
+}
+
+.btn-green {
+    border: none;
+    background: hsl(154, 59%, 51%);
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.ts {
+    color: rgba(119, 136, 153, 0.534);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.sts {
+    color: red;
+}
+
+@media (min-width: 900px) {
+    .container {
+        flex-direction: row;
+        background-image: url('images/bg-intro-desktop.png');
+    }
+    .intro {
+        width: 35%;
+        padding: 0;
+    }
+    .intro h2 {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: start;
+    }
+    .intro p {
+        font-size: 15px;
+        text-align: start;
+    }
+    .contact-form {
+        width: 50%;
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
